@@ -1,0 +1,14 @@
+C:\Capacitacion\NET_Personal\InventarioApp\inventarioapp\obj\Debug\net10.0\InventarioApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Capacitacion\NET_Personal\InventarioApp\inventarioapp\obj\Debug\net10.0\InventarioApp.AssemblyInfoInputs.cache
+C:\Capacitacion\NET_Personal\InventarioApp\inventarioapp\obj\Debug\net10.0\InventarioApp.AssemblyInfo.cs
+C:\Capacitacion\NET_Personal\InventarioApp\inventarioapp\obj\Debug\net10.0\InventarioApp.csproj.CoreCompileInputs.cache
+C:\Capacitacion\NET_Personal\InventarioApp\inventarioapp\bin\Debug\net10.0\InventarioApp.exe
+C:\Capacitacion\NET_Personal\InventarioApp\inventarioapp\bin\Debug\net10.0\InventarioApp.deps.json
+C:\Capacitacion\NET_Personal\InventarioApp\inventarioapp\bin\Debug\net10.0\InventarioApp.runtimeconfig.json
+C:\Capacitacion\NET_Personal\InventarioApp\inventarioapp\bin\Debug\net10.0\InventarioApp.dll
+C:\Capacitacion\NET_Personal\InventarioApp\inventarioapp\bin\Debug\net10.0\InventarioApp.pdb
+C:\Capacitacion\NET_Personal\InventarioApp\inventarioapp\obj\Debug\net10.0\InventarioApp.dll
+C:\Capacitacion\NET_Personal\InventarioApp\inventarioapp\obj\Debug\net10.0\refint\InventarioApp.dll
+C:\Capacitacion\NET_Personal\InventarioApp\inventarioapp\obj\Debug\net10.0\InventarioApp.pdb
+C:\Capacitacion\NET_Personal\InventarioApp\inventarioapp\obj\Debug\net10.0\InventarioApp.genruntimeconfig.cache
+C:\Capacitacion\NET_Personal\InventarioApp\inventarioapp\obj\Debug\net10.0\ref\InventarioApp.dll
