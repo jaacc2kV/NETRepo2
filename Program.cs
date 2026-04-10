@@ -18,6 +18,13 @@ Console.WriteLine($".NET Versión: {Environment.Version}");
 Console.WriteLine();
 Console.WriteLine($"Prueba Variable: {pruebavariable}");        //INTERPOLACION: $"....{variable}"
 Console.WriteLine("Estructura del proyecto");
+Console.WriteLine("     InventarioApp");
+Console.WriteLine("     |-- Program.cs");
+Console.WriteLine("     |-- InventarioApp.csproj");
+Console.WriteLine("     |--gitignore");
+Console.WriteLine("     |--README.md");
+Console.WriteLine("     |--src/");
+Console.WriteLine("         |--Models/ (Próxima clase)")
 Console.WriteLine("Configuración .csproj");
 Console.WriteLine("Carpeta src/ creada");
 Console.WriteLine("Metadatos configurados");
