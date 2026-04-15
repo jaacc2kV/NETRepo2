@@ -12,3 +12,4 @@ C:\Capacitacion\NET_Personal\InventarioApp\inventarioapp\obj\Debug\net10.0\refin
 C:\Capacitacion\NET_Personal\InventarioApp\inventarioapp\obj\Debug\net10.0\InventarioApp.pdb
 C:\Capacitacion\NET_Personal\InventarioApp\inventarioapp\obj\Debug\net10.0\InventarioApp.genruntimeconfig.cache
 C:\Capacitacion\NET_Personal\InventarioApp\inventarioapp\obj\Debug\net10.0\ref\InventarioApp.dll
+C:\Capacitacion\NET_Personal\InventarioApp\inventarioapp\obj\Debug\net10.0\InventarioApp.sourcelink.json
