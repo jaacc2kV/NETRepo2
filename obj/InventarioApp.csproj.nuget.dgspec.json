@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Capacitacion\\NET_Personal\\InventarioApp\\InventarioApp\\InventarioApp.csproj": {}
+    "C:\\Capacitacion\\NET_Personal\\InventarioApp\\inventarioapp\\InventarioApp.csproj": {}
   },
   "projects": {
-    "C:\\Capacitacion\\NET_Personal\\InventarioApp\\InventarioApp\\InventarioApp.csproj": {
+    "C:\\Capacitacion\\NET_Personal\\InventarioApp\\inventarioapp\\InventarioApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Capacitacion\\NET_Personal\\InventarioApp\\InventarioApp\\InventarioApp.csproj",
+        "projectUniqueName": "C:\\Capacitacion\\NET_Personal\\InventarioApp\\inventarioapp\\InventarioApp.csproj",
         "projectName": "InventarioApp",
-        "projectPath": "C:\\Capacitacion\\NET_Personal\\InventarioApp\\InventarioApp\\InventarioApp.csproj",
+        "projectPath": "C:\\Capacitacion\\NET_Personal\\InventarioApp\\inventarioapp\\InventarioApp.csproj",
         "packagesPath": "C:\\Users\\jaczp\\.nuget\\packages\\",
-        "outputPath": "C:\\Capacitacion\\NET_Personal\\InventarioApp\\InventarioApp\\obj\\",
+        "outputPath": "C:\\Capacitacion\\NET_Personal\\InventarioApp\\inventarioapp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jaczp\\AppData\\Roaming\\NuGet\\NuGet.Config"
