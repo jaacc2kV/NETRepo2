@@ -65,4 +65,13 @@ public class InMemoryProductoRepository : IProductoRepository
         return _productos.Where(p => p.Precio >= precioMinimo && p.Precio <= precioMaximo);
     }
 
+    public IEnumerable<string> ObtenerNombres()
+    {
+        return _productos.Select(p => p.Nombre);
+    }
+
+    public bool HayStockBajo()
+    {
+        return _productos.Any(p => p.Cantidad <= 5);
+    }
 }
