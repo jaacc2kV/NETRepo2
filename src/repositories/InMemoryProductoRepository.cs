@@ -74,4 +74,29 @@ public class InMemoryProductoRepository : IProductoRepository
     {
         return _productos.Any(p => p.Cantidad <= 5);
     }
+
+    public IEnumerable<Producto> ObtenerOrdenadosPorPrecio()
+    {
+        return _productos.OrderBy(p => p.Precio);
+    }
+
+    public IEnumerable<Producto> ObtenerTopPorPrecio(int cantidad)
+    {
+        return _productos.OrderByDescending(p => p.Precio).Take(cantidad);
+    }
+
+    //==========GroupBy y conversión a Dictionary ========
+
+    public IEnumerable<IGrouping<CategoriaProducto, Producto>> AgruparPorCategoria()
+    {
+        return _productos.GroupBy(p => p.Categoria);
+    }
+
+    public Dictionary<CategoriaProducto, int> ContarPorCategoria()
+    {
+        return _productos   //List<Producto>
+            .GroupBy(p => p.Categoria)      //IEnumerable<IGrouping<CategoriaProducto, Producto>>
+            .ToDictionary(g => g.Key, g => g.Count());
+    }
+
 }
