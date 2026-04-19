@@ -99,4 +99,51 @@ public class InMemoryProductoRepository : IProductoRepository
             .ToDictionary(g => g.Key, g => g.Count());
     }
 
+    //=========AGregaciones con SUM, AVERAGE y MAXBY 
+
+    public decimal ObtenerValorTotalInventario()
+    {
+        return _productos.Sum(p => p.ValorTotal);
+    }
+
+    /// <summary>
+    /// Dame el PRECIO PROMEDIO de los productos
+    /// </summary>
+    /// <returns></returns>
+    public decimal ObtenerPrecioPromedio()
+    {
+        if (_productos.Count == 0) return 0;
+        return _productos.Average(p => p.Precio);
+    }
+
+    /// <summary>
+    /// Dame el PRODUCTO mas caro
+    /// </summary>
+    /// <returns></returns>
+    public Producto? ObtenerProductoMasCaro()
+    {
+        return _productos.MaxBy(p => p.Precio);
+    }
+
+    /// <summary>
+    /// AGRUPA y SUMA el ValorTotal por cada Categoria
+    /// </summary>
+    /// <returns></returns>
+    public Dictionary<CategoriaProducto, decimal> ObtenerValorPorCategoria()
+    {
+        return _productos   //List<Producto>
+            .GroupBy(p => p.Categoria)      //IEnumerable<IGrouping<>
+            .ToDictionary(g => g.Key, g => g.Sum(p => p.ValorTotal));
+    }
+
+    /// <summary>
+    /// Dame los productos cuyo STOCK esté por debajo de las 5 unidades
+    /// </summary>
+    /// <param name="umbral"></param>
+    /// <returns></returns>
+    public IEnumerable<Producto> ObtenerStockBajo(int umbral = 5)
+    {
+        return _productos.Where(p => p.Cantidad < umbral);
+    }
+
 }

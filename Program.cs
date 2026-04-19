@@ -1,4 +1,112 @@
-﻿//Console.WriteLine("Hello, World!");
+﻿using InventarioApp.Factories;
+using InventarioApp.Repositories;
+using InventarioApp.Models;
+using InventarioApp.Infraestructure;
+
+//Consumiendo
+Console.WriteLine("=== Prueba Integración JSON ===");
+
+var almacenamiento = new JsonInventarioStorage();
+
+var productos = new List<Producto>
+{
+    new Producto
+    {
+        Id = 1, 
+        Nombre = "Laptop", 
+        Precio = 999.99m,
+        Cantidad = 10, 
+        Categoria = CategoriaProducto.Electronica, 
+        Estado = EstadoProducto.Activo
+    }, 
+    new Producto
+    {
+        Id = 2, 
+        Nombre = "Camiseta", 
+        Precio = 19.99m,
+        Cantidad = 50, 
+        Categoria = CategoriaProducto.Ropa,
+        Estado = EstadoProducto.Activo
+    }
+};
+
+string ruta = "inventario_test.json";
+
+almacenamiento.CrearBackup(ruta);
+almacenamiento.Guardar(productos, ruta);
+
+Console.WriteLine("Inventario guardado correctamente");
+
+List<Producto> productosCargados = almacenamiento.Cargar(ruta);
+
+Console.WriteLine("Inventario cargado correctamente");
+
+foreach(Producto p in productosCargados)
+{
+    Console.WriteLine($"ID: {p.Id}, Nombre:{p.Nombre}, Precio: {p.Precio}, Cantidad: {p.Cantidad}, Categoria: {p.Categoria}, Estado: {p.Estado}");
+}
+ 
+
+
+//==================================EJERCICIO 2
+/*
+Console.WriteLine("=== InventarioApp ===");
+
+var fileManager = new Filemanager();    //creando una INSTANCIA (Objeto) de la clase FILEMANAGER
+string contenido = "Inventario actualizado";
+fileManager.Escribir("inventario.txt", contenido);
+
+string leerContenido = fileManager.Leer("inventario.txt");
+Console.WriteLine(contenido);
+
+
+
+//Crer repositorio en Memoria usando la fabrica (factory)
+InMemoryProductoRepository repositorio = new InMemoryProductoRepository();      //creando una INSTANCIA (Objeto) de la clase INMEMORYPRODUCTOREPOSITORY
+
+Producto laptop = ProductoFactory.Crear("Laptop Dell XPS 13", 1200, 5, CategoriaProducto.Electronica);
+Producto mouse = ProductoFactory.Crear("Mouse Logitech MX Master", 99, 20, CategoriaProducto.Electronica);
+Producto teclado = ProductoFactory.Crear("Teclado Mecánico", 150, 3, CategoriaProducto.Electronica);
+Producto silla = ProductoFactory.Crear("Silla Ergonómica Herman Miller", 500, 8, CategoriaProducto.Muebles);
+Producto escritorio = ProductoFactory.Crear("Escritorio Stand-up", 300, 2, CategoriaProducto.Muebles);
+
+//Agregando cada producto al REPOSITORIO (en Memoria)
+repositorio.Agregar(laptop);
+repositorio.Agregar(mouse);
+repositorio.Agregar(teclado);
+repositorio.Agregar(silla);
+repositorio.Agregar(escritorio);
+
+Console.WriteLine($"Productos agregados: {repositorio.Cantidad}\n");
+
+//Consultas basicas LINQ
+IEnumerable<Producto> electronicos = repositorio.BuscarPorCategoria(CategoriaProducto.Electronica);
+Console.WriteLine("Productos de electrónica");
+
+foreach(Producto producto in electronicos)
+{
+    Console.WriteLine($" {producto.Nombre}: ${producto.Precio}");
+}
+Console.WriteLine("\n Productos con 'mouse' en el nombre: ");
+
+IEnumerable<Producto> conMouse = repositorio.BuscarPorNombre("mouse");
+
+foreach(Producto producto in conMouse)
+{
+    Console.WriteLine($" {producto.Nombre}");
+}
+
+//var totalInventario = repositorio.ObtenerTodos().Sum(p => p.ValorTotal);
+var nombres = repositorio.ObtenerNombres();
+Console.WriteLine($"\n Todos los nombres {string.Join(",", nombres)}");
+
+var hayStockBajo = repositorio.HayStockBajo();
+Console.WriteLine($"\n Hay Stock Bajo: {hayStockBajo}");
+*/
+
+//==================================EJERCICIO 1
+/* VA
+//Console.WriteLine("Hello, World!");
 
 using System.Reflection;
 
@@ -51,6 +159,10 @@ string? comando;
 // Loop de NULLABILIDAD
 ///////////////////////////
 
+
+*/
+
+/* VA
 while (sistemaActivo)
 {
     Console.Write("Inventario: ");
@@ -75,11 +187,7 @@ while (sistemaActivo)
     //Aplicamos el manejador seguro
     //string comando = entrada3?.Trim().ToLower() ?? "salir";
     
-    /*if (comando is null)
-    {
-        Console.WriteLine("Soy NULO");
-    }
-    */
+
     switch(comando)
     {
         case "salir":
@@ -99,6 +207,9 @@ while (sistemaActivo)
     
 }
 
+*/
+
+/* VA
 //Conversion segura Tryparse
 if (int.TryParse(entradaCantidad, out int cantidad))
 {
@@ -144,8 +255,9 @@ if (string.IsNullOrWhiteSpace(entrada) || entrada.ToLower() == "salir")
     Console.WriteLine("Hasta luego");
     Environment.Exit(0);
 }
+*/
 
-/*
+/* NO VA
 Console.WriteLine($"Prueba Variable: {pruebavariable}");        //INTERPOLACION: $"....{variable}"
 Console.WriteLine("Estructura del proyecto");
 Console.WriteLine("     InventarioApp");
@@ -162,6 +274,7 @@ Console.WriteLine();
 Console.WriteLine("Estado: Proyecto inicializado");
 */
 
+/* VA
 void MostrarBanner()
 {
     Console.WriteLine("=========================================");
@@ -186,3 +299,4 @@ void MostrarAyuda()
     Console.WriteLine("  dotnet run -- --help");
     Console.WriteLine("  dotnet run -- --version");
 }
+*/
