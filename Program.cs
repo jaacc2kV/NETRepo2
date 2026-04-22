@@ -1,4 +1,39 @@
-﻿using InventarioApp.Factories;
+﻿using InventarioApp.Infraestructure;
+using InventarioApp.Models;
+using InventarioApp.Factories;
+
+List<Producto> productos = new List<Producto>
+{
+    ProductoFactory.Crear("Laptop", 1200.00m, 3, CategoriaProducto.Electronica), 
+    ProductoFactory.Crear("Camisa", 45.00m, 15, CategoriaProducto.Ropa), 
+    ProductoFactory.Crear("Arroz", 12.00m, 50, CategoriaProducto.Alimentos), 
+    ProductoFactory.Crear("Lampara", 35.00m, 2, CategoriaProducto.Hogar), 
+    ProductoFactory.Crear("Balón", 25.00m, 8, CategoriaProducto.Deportes), 
+    ProductoFactory.Crear("Mesa", 150.00m, 4, CategoriaProducto.Muebles), 
+};
+
+GeneradorReportes generador = new GeneradorReportes(productos);
+
+Console.WriteLine(generador.GenerarResumen());
+Console.WriteLine("\n");
+
+Console.WriteLine(generador.GenerarReporteStockBajo());
+Console.WriteLine("\n");
+
+Console.WriteLine(generador.GenerarTopProductos());
+Console.WriteLine("\n");
+
+Console.WriteLine(generador.ExportarCsv());
+Console.WriteLine("\n");
+
+Console.WriteLine(generador.ExportarResumenJson());
+Console.WriteLine("\n");
+
+
+
+//==================================EJERCICIO 3
+/*
+using InventarioApp.Factories;
 using InventarioApp.Repositories;
 using InventarioApp.Models;
 using InventarioApp.Infraestructure;
@@ -46,7 +81,7 @@ foreach(Producto p in productosCargados)
     Console.WriteLine($"ID: {p.Id}, Nombre:{p.Nombre}, Precio: {p.Precio}, Cantidad: {p.Cantidad}, Categoria: {p.Categoria}, Estado: {p.Estado}");
 }
  
-
+*/
 
 //==================================EJERCICIO 2
 /*
