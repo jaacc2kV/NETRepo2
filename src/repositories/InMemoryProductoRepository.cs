@@ -10,7 +10,7 @@ public class InMemoryProductoRepository : IProductoRepository
 
     public void Agregar(Producto producto)
     {
-        producto.Id = _proximoId;
+        //producto.Id = _proximoId;
         _productos.Add(producto);
     }
 
@@ -40,7 +40,7 @@ public class InMemoryProductoRepository : IProductoRepository
 
     public bool Eliminar(int id)
     {
-        Producto producto = ObtenerPorId(id);
+        Producto? producto = ObtenerPorId(id);
 
         if (producto == null) return false;
 

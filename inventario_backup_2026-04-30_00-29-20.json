@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "nombre": "Bolas 2\u0022",
+    "precio": 1800,
+    "cantidad": 20,
+    "categoria": "Otros",
+    "estado": "Activo",
+    "fechaRegistro": "2026-04-30T00:12:29.191414-05:00",
+    "valorTotal": 36000
+  },
+  {
+    "id": 1,
+    "nombre": "Bolas 5\u0022",
+    "precio": 1950,
+    "cantidad": 31,
+    "categoria": "Otros",
+    "estado": "Activo",
+    "fechaRegistro": "2026-04-30T00:14:05.4081946-05:00",
+    "valorTotal": 60450
+  }
+]
