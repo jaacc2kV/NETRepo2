@@ -172,38 +172,37 @@ while (activo)
         {
             Console.WriteLine("\nCategoría no válida");
         }
+    }
+    void MostrarResumen()
+    {
+        string resumen = servicio.GenerarResumen();
+        Console.WriteLine($"\n{resumen}");
 
-        void MostrarResumen()
+    }
+
+    void MostrarStockBajo()
+    {
+        string reporte = servicio.GenerarReporteStockBajo();
+        Console.WriteLine($"\n{reporte}");
+    }
+
+    void MostrarEstadisticas()
+    {
+        Console.WriteLine("\n=== ESTADISTICAS ===");
+        Console.WriteLine($"Valor total del inventario: ${servicio.ObtenerValorTotalInventario()}");
+        Console.WriteLine($"Precio promedio: ${servicio.ObtenerPrecioPromedio():F2}");
+
+        Producto? masCaro = servicio.ObtenerProductoMasCaro();
+        if (masCaro != null)
         {
-            string resumen = servicio.GenerarResumen();
-            Console.WriteLine($"\n{resumen}");
-
+            Console.WriteLine($"Producto más caro: {masCaro.Nombre} (${masCaro.Precio})");
         }
+    }
 
-        void MostrarStockBajo()
-        {
-            string reporte = servicio.GenerarReporteStockBajo();
-            Console.WriteLine($"\n{reporte}");
-        }
-
-        void MostrarEstadisticas()
-        {
-            Console.WriteLine("\n=== ESTADISTICAS ===");
-            Console.WriteLine($"Valor total del inventario: ${servicio.ObtenerValorTotalInventario()}");
-            Console.WriteLine($"Precio promedio: ${servicio.ObtenerPrecioPromedio():F2}");
-
-            Producto? masCaro = servicio.ObtenerProductoMasCaro();
-            if (masCaro != null)
-            {
-                Console.WriteLine($"Producto más caro: {masCaro.Nombre} (${masCaro.Precio})");
-            }
-        }
-
-        void ExportarCsv()
-        {
-            string csv = servicio.ExportarCsv();
-            Console.WriteLine($"\n{csv}");
-        }
+    void ExportarCsv()
+    {
+        string csv = servicio.ExportarCsv();
+        Console.WriteLine($"\n{csv}");
     }
 
 }
