@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Sistema de gestión de inventario - Curso Fundamentos .NET")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0.0+c08b887edc047d9f2b19bad4fdecf0178d4b101e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0.0+13d723581dba500b9b5bd06d4cd0717ee3c62cae")]
 [assembly: System.Reflection.AssemblyProductAttribute("InventarioApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InventarioApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

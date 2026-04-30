@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Capacitacion\\NET_Personal\\InventarioApp\\inventarioapp\\InventarioApp.csproj": {}
+    "C:\\Capacitacion\\NET_Personal\\InventarioApp\\InventarioApp\\InventarioApp.csproj": {}
   },
   "projects": {
-    "C:\\Capacitacion\\NET_Personal\\InventarioApp\\inventarioapp\\InventarioApp.csproj": {
+    "C:\\Capacitacion\\NET_Personal\\InventarioApp\\InventarioApp\\InventarioApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Capacitacion\\NET_Personal\\InventarioApp\\inventarioapp\\InventarioApp.csproj",
+        "projectUniqueName": "C:\\Capacitacion\\NET_Personal\\InventarioApp\\InventarioApp\\InventarioApp.csproj",
         "projectName": "InventarioApp",
-        "projectPath": "C:\\Capacitacion\\NET_Personal\\InventarioApp\\inventarioapp\\InventarioApp.csproj",
+        "projectPath": "C:\\Capacitacion\\NET_Personal\\InventarioApp\\InventarioApp\\InventarioApp.csproj",
         "packagesPath": "C:\\Users\\jaczp\\.nuget\\packages\\",
-        "outputPath": "C:\\Capacitacion\\NET_Personal\\InventarioApp\\inventarioapp\\obj\\",
+        "outputPath": "C:\\Capacitacion\\NET_Personal\\InventarioApp\\InventarioApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\jaczp\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\jaczp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.202/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
