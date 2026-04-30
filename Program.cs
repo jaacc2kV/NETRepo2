@@ -40,7 +40,7 @@ while (activo)
         case "9":
             ExportarCsv();
             break;
-        case "10";
+        case "10":
             activo = false;
             Console.WriteLine("\nHasta luego!");
             break;
@@ -73,7 +73,7 @@ while (activo)
         Console.Write("Precio: ");
         decimal precio = decimal.Parse(Console.ReadLine() ?? "0");
 
-        Console.Write("Cantidad: ")
+        Console.Write("Cantidad: ");
         int cantidad = int.Parse(Console.ReadLine() ?? "0");
 
         Console.WriteLine("\nCategorías: Electrónica, Ropa, Alimentos, Hogar, Deportes, Libros, Muebles, Otros");
